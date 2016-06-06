@@ -1,18 +1,30 @@
 {
   "name": "palmetto-svc-pouchdb",
   "version": "1.0.0",
-  "description": "",
+  "description": "This module provides a pouchdb model service for any palmettoflow application.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Tom",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "palmettoflow-event": "^1.1.2",
     "pluralize": "^2.0.0",
     "pouchdb": "^5.3.2",
     "xtend": "^4.0.1"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twilson63/palmetto-svc-pouchdb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/twilson63/palmetto-svc-pouchdb/issues"
+  },
+  "homepage": "https://github.com/twilson63/palmetto-svc-pouchdb#readme"
 }

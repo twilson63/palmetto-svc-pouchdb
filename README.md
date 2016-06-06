@@ -17,7 +17,7 @@ npm install palmetto-svc-pouchdb -S
 
 Start the Service
 
-```
+``` js
 var palmetto = require('palmetto-nodejs')
 var ee = palmetto()
 var svc = require('palmetto-svc-pouchdb')
@@ -30,7 +30,7 @@ Events Supported
 
 Get All Documents in the database
 
-```
+``` js
 var newEvent = require('palmettoflow-event').newEvent
 var ne = newEvent('docs', 'all', {}, {
   // actor info here
@@ -47,7 +47,7 @@ ee.emit('send', ne)
 
 Get Documents of specific type
 
-```
+``` js
 var newEvent = require('palmettoflow-event').newEvent
 var ne = newEvent('projects', 'list', {}, {
   // actor info here
@@ -65,7 +65,7 @@ ee.emit('send', ne)
 
 Get Changes Feed
 
-```
+``` js
 var newEvent = require('palmettoflow-event').newEvent
 var ne = newEvent('projects', 'changes', {
   live: true,
@@ -86,7 +86,7 @@ ee.emit('send', ne)
 
 Get Custom query
 
-```
+``` js
 var newEvent = require('palmettoflow-event').newEvent
 var ne = newEvent('projects', 'query', {
   options: {},
@@ -105,7 +105,7 @@ ee.emit('send', ne)
 Get Single Document
 
 
-```
+``` js
 var newEvent = require('palmettoflow-event').newEvent
 var ne = newEvent('projects', 'get', "12345", {
   // actor info here
@@ -121,7 +121,7 @@ ee.emit('send', ne)
 
 Create Document
 
-```
+``` js
 var newEvent = require('palmettoflow-event').newEvent
 var ne = newEvent('projects', 'create', {...}, {
   // actor info here
@@ -137,7 +137,7 @@ ee.emit('send', ne)
 
 Update Document
 
-```
+``` js
 var newEvent = require('palmettoflow-event').newEvent
 var ne = newEvent('projects', 'update', {...}, {
   // actor info here
@@ -154,7 +154,7 @@ ee.emit('send', ne)
 
 Remove Document
 
-```
+``` js
 var newEvent = require('palmettoflow-event').newEvent
 var ne = newEvent('projects', 'remove', {...}, {
   // actor info here
